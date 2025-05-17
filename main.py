@@ -1,5 +1,7 @@
 
+import function from *
  
+missoes = []
 
 #criando a funcao de criar um menu
 def menu():
@@ -12,13 +14,13 @@ def menu():
 
     opcao = input("escolha uma dessas opcoes");
 
-    if opcao == "1":
-       CadastrarMissao();
-    elif opcao == "2":
-      ListarMissoes();
-    elif opcao == "3":
-      SimularLancamento();
-    elif opcao == "4":
+    if opcao == '1':
+       CadastrarMissao(missao);
+    elif opcao == '2':
+      ListarMissoes(missao);
+    elif opcao == '3':
+      SimularLancamento(missao);
+    elif opcao == '4':
       print("saindo....")
       break
     else:
