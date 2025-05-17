@@ -1,4 +1,6 @@
 
+ 
+
 #criando a funcao de criar um menu
 def menu():
   while(True):
@@ -9,5 +11,17 @@ def menu():
     print("4.sair");
 
     opcao = input("escolha uma dessas opcoes");
+
+    if opcao == "1":
+       CadastrarMissao();
+    elif opcao == "2":
+      ListarMissoes();
+    elif opcao == "3":
+      SimularLancamento();
+    elif opcao == "4":
+      print("saindo....")
+      break
+    else:
+      print("missao encerrada")
 
 menu()
